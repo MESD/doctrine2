@@ -3138,7 +3138,7 @@ class Parser
             $escapeChar = new AST\Literal(AST\Literal::STRING, $this->lexer->token['value']);
         }
 
-        $ilikeExpr = new AST\ILikeExpression($stringExpr, $stringPattern, $escapeChar);
+        $ilikeExpr = new AST\IlikeExpression($stringExpr, $stringPattern, $escapeChar);
         $ilikeExpr->not = $not;
 
         return $ilikeExpr;
