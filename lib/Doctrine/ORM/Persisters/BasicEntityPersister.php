@@ -90,9 +90,11 @@ class BasicEntityPersister
         Comparison::EQ  => '= %s',
         // This is a helluva damn problem
         // Messing up criteria for some reason
-        // uncommmented line fixes
-        // Comparison::IS  => 'IS %s',
-        Comparison::IS  => '= %s',
+        // commmented line fixes
+        // I'm really worried about this change
+        // -DL
+        // Comparison::IS  => '= %s',
+        Comparison::IS  => 'IS %s',
         Comparison::NEQ => '!= %s',
         Comparison::GT  => '> %s',
         Comparison::GTE => '>= %s',
